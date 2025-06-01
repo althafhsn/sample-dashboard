@@ -1,0 +1,93 @@
+[
+  {
+    "id": 6,
+    "product_name": "Printer",
+    "amount": 150.0,
+    "customer": "Diana Prince",
+    "date": "2024-01-20"
+  },
+  {
+    "id": 7,
+    "product_name": "Desk Lamp",
+    "amount": 45.0,
+    "customer": "Bruce Wayne",
+    "date": "2024-01-21"
+  },
+  {
+    "id": 8,
+    "product_name": "External Hard Drive",
+    "amount": 110.5,
+    "customer": "Clark Kent",
+    "date": "2024-01-22"
+  },
+  {
+    "id": 9,
+    "product_name": "Graphics Card",
+    "amount": 499.99,
+    "customer": "Peter Parker",
+    "date": "2024-01-23"
+  },
+  {
+    "id": 10,
+    "product_name": "Gaming Chair",
+    "amount": 250.0,
+    "customer": "Natasha Romanoff",
+    "date": "2024-01-24"
+  },
+  {
+    "id": 11,
+    "product_name": "Tablet",
+    "amount": 320.0,
+    "customer": "Steve Rogers",
+    "date": "2024-01-25"
+  },
+  {
+    "id": 12,
+    "product_name": "Smartphone",
+    "amount": 699.0,
+    "customer": "Tony Stark",
+    "date": "2024-01-26"
+  },
+  {
+    "id": 13,
+    "product_name": "Router",
+    "amount": 89.0,
+    "customer": "Wanda Maximoff",
+    "date": "2024-01-27"
+  },
+  {
+    "id": 14,
+    "product_name": "Speaker",
+    "amount": 130.0,
+    "customer": "Barry Allen",
+    "date": "2024-01-28"
+  },
+  {
+    "id": 15,
+    "product_name": "Smartwatch",
+    "amount": 199.99,
+    "customer": "Scott Lang",
+    "date": "2024-01-29"
+  },
+  {
+    "id": 16,
+    "product_name": "VR Headset",
+    "amount": 349.0,
+    "customer": "Stephen Strange",
+    "date": "2024-01-30"
+  },
+  {
+    "id": 17,
+    "product_name": "Projector",
+    "amount": 600.0,
+    "customer": "Selina Kyle",
+    "date": "2024-01-31"
+  },
+  {
+    "product_name": "S24",
+    "amount": 1222.0,
+    "customer": "Althaf Husain",
+    "date": "2025-06-01",
+    "id": 18
+  }
+]
