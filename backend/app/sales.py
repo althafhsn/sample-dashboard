@@ -6,13 +6,13 @@ from datetime import datetime, timedelta
 from backend.app.FileStorage import FileStorage
 from backend.app.models import Sale, SaleCreate, ForecastData
 
-router = APIRouter()
+saleAPI = APIRouter()
 
 # Initialize file storage
 file_storage = FileStorage("sales_data.txt")
 
 
-@router.get("/sales", response_model=List[Sale])
+@saleAPI.get("/sales", response_model=List[Sale])
 def get_sales():
     try:
         sales = file_storage.get_sales()
@@ -22,7 +22,7 @@ def get_sales():
         raise HTTPException(status_code=500, detail=f"Error reading sales data: {str(e)}")
 
 
-@router.post("/sales", response_model=Sale)
+@saleAPI.post("/sales", response_model=Sale)
 def create_sale(sale: SaleCreate):
     try:
         sale_data = {
@@ -39,9 +39,9 @@ def create_sale(sale: SaleCreate):
         raise HTTPException(status_code=500, detail=f"Error creating sale: {str(e)}")
 
 
-@router.get("/sales/forecast", response_model=List[ForecastData])
+@saleAPI.get("/sales/forecast", response_model=List[ForecastData])
 def get_sales_forecast():
-    """Get sales forecast for next 7 days"""
+    # """Get sales forecast for next 7 days"""
     try:
         forecast_data = []
         base_date = datetime.now()
@@ -61,9 +61,9 @@ def get_sales_forecast():
         raise HTTPException(status_code=500, detail=f"Error generating forecast: {str(e)}")
 
 
-@router.get("/sales/{sale_id}", response_model=Sale)
+@saleAPI.get("/sales/{sale_id}", response_model=Sale)
 def get_sale(sale_id: int):
-    """Get a specific sale by ID"""
+    # """Get a specific sale by ID"""
     try:
         sales = file_storage.get_sales()
         for sale in sales:
@@ -76,9 +76,9 @@ def get_sale(sale_id: int):
         raise HTTPException(status_code=500, detail=f"Error retrieving sale: {str(e)}")
 
 
-@router.delete("/sales/{sale_id}")
+@saleAPI.delete("/sales/{sale_id}")
 def delete_sale(sale_id: int):
-    """Delete a sale by ID"""
+    # """Delete a sale by ID"""
     try:
         data = file_storage.load_data()
         original_length = len(data)
@@ -98,9 +98,9 @@ def delete_sale(sale_id: int):
         raise HTTPException(status_code=500, detail=f"Error deleting sale: {str(e)}")
 
 
-@router.put("/sales/{sale_id}", response_model=Sale)
+@saleAPI.put("/sales/{sale_id}", response_model=Sale)
 def update_sale(sale_id: int, sale: SaleCreate):
-    """Update a sale by ID"""
+    # """Update a sale by ID"""
     try:
         data = file_storage.load_data()
 

@@ -1,71 +1,175 @@
+# 📊 Sales Prediction System — Full Stack Project
+
+A modern full-stack sales prediction and management system built with:
+
+- **📦 Sample Dashboard Frontend** (React 19 + TypeScript + Tailwind CSS)
+- **⚡ FastAPI Backend** (Python 3.8+)
+
+This project allows users to manage sales data and generate a 7-day forecast through a sleek dashboard UI and a high-performance API.
+
+---
+
+## 📁 Project Structure
 
 
-TailAdmin is a free and open-source admin dashboard template built on **React and Tailwind CSS**, providing developers
-with everything they need to create a comprehensive, data-driven back-end,
-dashboard, or admin panel solution for upcoming web projects.
+├── backend/ # FastAPI backend
+│ ├── app/
+│ │ ├── FileStorage.py
+│ │ ├── main.py
+│ │ └── models.py
+│ │ └── sales.py
+│ ├── run.py   # FastAPI app entry point
+│ └── requirements.txt
+  └── sales_data.txt  # Dummy DB
+   
+├── frontend/ # Sample Dashboard Frontend
+│ ├── public/
+│ ├── src/
+│ ├── tailwind.config.js
+│ ├── package.json
+│ └── ...
+└── README.md 
 
-With TailAdmin, you get access to all the necessary dashboard UI components, elements, and pages required to build a
-feature-rich and complete dashboard or admin panel. Whether you're building dashboard or admin panel for a complex web
-application or a simple website, TailAdmin is the perfect solution to help you get up and running quickly.
 
 
-TailAdmin provides essential UI components and layouts for building feature-rich, data-driven admin dashboards and
-control panels. It's built on:
+---
 
-- React 19
-- TypeScript
-- Tailwind CSS
+## 🚀 Features
 
+### 📦 Backend (FastAPI)
 
-## Installation
+- ✅ Create, Read, Update, Delete (CRUD) for sales data
+- 📈 Generate dummy sales forecasts for the next 7 days
+- 🔧 File-based storage (no database setup required)
+- 🧪 Swagger UI for API testing (`/docs`)
 
-### Prerequisites
+### 🧩 Frontend (Sample Dashboard)
 
-To get started with TailAdmin, ensure you have the following prerequisites installed and set up:
+- ⚡ Built with React 19, Tailwind CSS, and TypeScript
+- 📋 Dashboard UI with tables and forecast data
+- 🔄 Responsive layout with modern admin features
+- 🧭 React Router support for navigation
 
-- Node.js 18.x or later (recommended to use Node.js 20.x or later)
+---
 
-### Cloning the Repository
+## ⚙️ Setup Instructions
 
-Clone the repository using the following command:
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/althafhsn/ssample-dashboar.git
-```
+git clone https://github.com/althafhsn/sample-dashboard.git
+cd sample-dashboard
 
-> Windows Users: place the repository near the root of your drive if you face issues while cloning.
+2️⃣ Backend Setup (FastAPI)
+Navigate to the backend folder:
 
-1. Install dependencies:
+bash
+Copy
+Edit
+cd backend
+Install dependencies:
 
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+bash
+Copy
+Edit
+pip install -r requirements.txt
+# or manually:
+pip install fastapi uvicorn pydantic
+Run the FastAPI server:
 
-   > Use the `--legacy-peer-deps` flag, if you face issues while installing.
+bash
+Copy
+Edit
+uvicorn main:app --reload
+Visit:
 
-2. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+Swagger API Docs: http://localhost:8000/docs
 
-#### Next Steps
-
-- Run npm install or yarn install to update dependencies.
-- Check for any style changes or compatibility issues.
-- Refer to the Tailwind CSS v4 [Migration Guide](https://tailwindcss.com/docs/upgrade-guide) on this release. if needed.
-- This update keeps the project up to date with the latest Tailwind improvements. 🚀
+Root Endpoint: http://localhost:8000
 
 
+3️⃣ Frontend Setup (Sample Dashboard)
+Open a new terminal and navigate to the frontend folder:
 
-#### Key Features
+bash
+Copy
+Edit
+cd frontend
+Install Node dependencies:
 
-- Enhanced navigation with React Router integration
-- Advanced tables with sorting and filtering
-- New UI components and improved existing ones
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+If you encounter issues, try:
+
+bash
+Copy
+Edit
+npm install --legacy-peer-deps
+Run the development server:
+
+bash
+Copy
+Edit
+npm run dev
+# or
+yarn dev
+Visit the dashboard UI at http://localhost:5173
+
+🔌 API Endpoints Overview
+Method	Endpoint	Description
+GET	/sales	Get all sales
+GET	/sales/{id}	Get a specific sale
+POST	/sales	Add a new sale
+PUT	/sales/{id}	Update an existing sale
+DELETE	/sales/{id}	Delete a sale
+GET	/sales/forecast	Get dummy 7-day forecast
+
+🛠 Prerequisites
+Python 3.8+
+
+Node.js 18+ (20+ recommended)
+
+pip (Python package installer)
+
+npm or yarn (JavaScript package manager)
+
+🧪 Testing the API
+Use any of the following tools:
+
+✅ Swagger UI: http://localhost:8000/docs
+
+🧪 Postman or Insomnia
+
+🔁 React frontend connected directly to FastAPI
+
+📜 License
+This project is open-source and available under the MIT License.
+
+👨‍💻 Author
+Made with ❤️ by Althaf Husain
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you’d like to add:
+
+- Screenshots of the dashboard  
+- Environment variable support  
+- Docker or deployment steps  
+- Production database support (e.g., PostgreSQL or SQLite)
+
+I'm happy to assist!
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.app.routes import router
+from backend.app.sales import saleAPI
 
 app = FastAPI(title="Sales Dashboard API", version="1.0.0")
 
@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(router, prefix="/api")
+app.include_router(saleAPI, prefix="/api")
 
 
 @app.get("/")

@@ -1,93 +1,142 @@
 [
   {
+    "id": 1,
+    "product_name": "Laptop",
+    "amount": 1200.0,
+    "customer": "Alice Johnson",
+    "date": "2025-05-01"
+  },
+  {
+    "id": 2,
+    "product_name": "Keyboard",
+    "amount": 75.5,
+    "customer": "Bob Smith",
+    "date": "2025-05-02"
+  },
+  {
+    "id": 3,
+    "product_name": "Monitor",
+    "amount": 250.0,
+    "customer": "Carol White",
+    "date": "2025-05-03"
+  },
+  {
+    "id": 4,
+    "product_name": "Mouse",
+    "amount": 35.99,
+    "customer": "David Black",
+    "date": "2025-05-04"
+  },
+  {
+    "id": 5,
+    "product_name": "Webcam",
+    "amount": 89.0,
+    "customer": "Evelyn Green",
+    "date": "2025-05-05"
+  },
+  {
     "id": 6,
     "product_name": "Printer",
     "amount": 150.0,
-    "customer": "Diana Prince",
-    "date": "2024-01-20"
+    "customer": "Fiona Grey",
+    "date": "2025-05-06"
   },
   {
     "id": 7,
-    "product_name": "Desk Lamp",
-    "amount": 45.0,
-    "customer": "Bruce Wayne",
-    "date": "2024-01-21"
+    "product_name": "Tablet",
+    "amount": 320.0,
+    "customer": "George King",
+    "date": "2025-05-07"
   },
   {
     "id": 8,
-    "product_name": "External Hard Drive",
-    "amount": 110.5,
-    "customer": "Clark Kent",
-    "date": "2024-01-22"
+    "product_name": "Router",
+    "amount": 89.99,
+    "customer": "Hannah Lee",
+    "date": "2025-05-08"
   },
   {
     "id": 9,
-    "product_name": "Graphics Card",
-    "amount": 499.99,
-    "customer": "Peter Parker",
-    "date": "2024-01-23"
+    "product_name": "Headphones",
+    "amount": 99.0,
+    "customer": "Isaac Newton",
+    "date": "2025-05-09"
   },
   {
     "id": 10,
-    "product_name": "Gaming Chair",
-    "amount": 250.0,
-    "customer": "Natasha Romanoff",
-    "date": "2024-01-24"
+    "product_name": "Desk Lamp",
+    "amount": 45.0,
+    "customer": "Jackie Chan",
+    "date": "2025-05-10"
   },
   {
     "id": 11,
-    "product_name": "Tablet",
-    "amount": 320.0,
-    "customer": "Steve Rogers",
-    "date": "2024-01-25"
+    "product_name": "Graphics Card",
+    "amount": 599.99,
+    "customer": "Kelly Clarkson",
+    "date": "2025-06-01"
   },
   {
     "id": 12,
     "product_name": "Smartphone",
-    "amount": 699.0,
-    "customer": "Tony Stark",
-    "date": "2024-01-26"
+    "amount": 850.0,
+    "customer": "Liam Neeson",
+    "date": "2025-06-02"
   },
   {
     "id": 13,
-    "product_name": "Router",
-    "amount": 89.0,
-    "customer": "Wanda Maximoff",
-    "date": "2024-01-27"
+    "product_name": "External Hard Drive",
+    "amount": 125.5,
+    "customer": "Mia Wong",
+    "date": "2025-06-03"
   },
   {
     "id": 14,
-    "product_name": "Speaker",
-    "amount": 130.0,
-    "customer": "Barry Allen",
-    "date": "2024-01-28"
+    "product_name": "Smartwatch",
+    "amount": 199.99,
+    "customer": "Nina Dobrev",
+    "date": "2025-06-04"
   },
   {
     "id": 15,
-    "product_name": "Smartwatch",
-    "amount": 199.99,
-    "customer": "Scott Lang",
-    "date": "2024-01-29"
+    "product_name": "VR Headset",
+    "amount": 349.0,
+    "customer": "Oscar Wilde",
+    "date": "2025-06-05"
   },
   {
     "id": 16,
-    "product_name": "VR Headset",
-    "amount": 349.0,
-    "customer": "Stephen Strange",
-    "date": "2024-01-30"
+    "product_name": "Gaming Console",
+    "amount": 499.0,
+    "customer": "Paul Walker",
+    "date": "2025-06-06"
   },
   {
     "id": 17,
-    "product_name": "Projector",
-    "amount": 600.0,
-    "customer": "Selina Kyle",
-    "date": "2024-01-31"
+    "product_name": "Bluetooth Speaker",
+    "amount": 130.0,
+    "customer": "Quentin Tarantino",
+    "date": "2025-06-07"
   },
   {
-    "product_name": "S24",
-    "amount": 1222.0,
-    "customer": "Althaf Husain",
-    "date": "2025-06-01",
-    "id": 18
+    "id": 18,
+    "product_name": "Drone",
+    "amount": 899.0,
+    "customer": "Rachel Green",
+    "date": "2025-06-08"
+  },
+  {
+    "id": 19,
+    "product_name": "Camera",
+    "amount": 1200.0,
+    "customer": "Steve Rogers",
+    "date": "2025-06-09"
+  },
+  {
+    "id": 20,
+    "product_name": "E-reader",
+    "amount": 150.0,
+    "customer": "Tony Stark",
+    "date": "2025-06-10"
   }
 ]
